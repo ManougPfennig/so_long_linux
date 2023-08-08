@@ -14,7 +14,7 @@
 
 int	arg_parsing(int ac, char **av, t_data *data)
 {
-	if (ac > 2 || ac < 2)
+	if (ac != 2)
 	{
 		ft_printf("Error\n");
 		ft_printf("Launch with the name of the map file as only argument\n");

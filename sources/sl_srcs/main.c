@@ -22,6 +22,8 @@ void	init_struct(t_data *data)
 	data->usable = 0;
 	data->moves = 0;
 	data->victory = 0;
+	data->map = NULL;
+	data->copy_map = NULL;
 }
 
 int	main(int ac, char **av)
@@ -32,7 +34,7 @@ int	main(int ac, char **av)
 	if (arg_parsing(ac, av, &data))
 	{
 		ft_free_tab(data.map, data.copy_map);
-		exit(EXIT_FAILURE);
+		exit(EXIT_SUCCESS);
 	}
 	start_mlx(&data);
 	create_window(&data, "so_long");

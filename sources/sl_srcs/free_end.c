@@ -39,6 +39,7 @@ void	ft_free_tab(char **tab, char **tab2)
 	}
 	if (tab)
 		free(tab);
+	i = 0;
 	while (tab2 && tab2[i])
 	{
 		free(tab2[i]);
